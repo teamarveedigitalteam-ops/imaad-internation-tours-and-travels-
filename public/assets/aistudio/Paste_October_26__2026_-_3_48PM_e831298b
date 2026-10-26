@@ -1,0 +1,928 @@
+# MASTER WEBSITE DEVELOPMENT PROMPT
+## Imaad International Tours & Travels — Complete Website Redesign
+
+Act as a senior full-stack developer, premium UI/UX designer, travel website specialist, SEO expert, security engineer, and conversion optimization specialist.
+
+Your task is to inspect, improve, and complete the existing website for **Imaad International Tours & Travels**.
+
+**Website:** https://imaadinternationaltravels.com/
+
+**Existing Vercel project:** `imaad-tours`
+
+**Primary objective:** Create a premium, trustworthy, image-heavy, responsive travel website that helps customers understand our services through beautiful photographs, simple package cards, transparent prices, hotel images, and easy WhatsApp enquiries.
+
+The website must feel professional, elegant, safe, and easy to understand. Visitors should not need to read long paragraphs to understand our services.
+
+---
+
+# 1. CRITICAL INSTRUCTIONS — EXISTING PROJECT
+
+Before writing any code, inspect the existing project.
+
+The existing project has previously been identified as using Next.js 16, React 19, and TypeScript, with files including:
+
+- `app/page.tsx`
+- `app/layout.tsx`
+- `app/globals.css`
+- `components/`
+- `lib/`
+- `lib/site-data.ts`
+- `package.json`
+
+Verify the current repository and files before relying on this information.
+
+Follow these rules:
+
+1. Work on the existing `imaad-tours` project.
+2. Preserve the existing custom domain and production deployment.
+3. Inspect the existing components, navigation, packages, contact information, and configuration.
+4. Check `lib/site-data.ts` for existing website content.
+5. Preserve working features and integrations.
+6. Inspect whether a backend, database, enquiry API, or external service already exists. Do not assume one exists.
+7. Never overwrite production code without creating a safe backup or working on a separate branch.
+8. Do not expose API keys, passwords, tokens, or environment variables.
+9. Make changes in a preview deployment first.
+10. Deploy to production only after the changes have been tested and approved.
+
+Do not create a separate unrelated website or replace the existing project with a generic template.
+
+If repository access is unavailable, explain what access is missing rather than pretending to have modified the project.
+
+# 2. BRAND IDENTITY
+
+**Brand name:** Imaad International Tours & Travels
+
+**Suggested tagline:** Your Sacred Journey, Beautifully Planned.
+
+**Primary business focus:**
+- Umrah travel packages.
+- Makkah and Madinah Ziyarat.
+- Hotel accommodation.
+- Flight reservations.
+- Travel coordination.
+- Visa assistance, subject to the actual services offered.
+- Other travel packages offered by the company.
+
+Use the existing verified business information wherever possible.
+
+## Brand personality
+
+The website must communicate:
+
+- Trust.
+- Professionalism.
+- Comfort.
+- Transparency.
+- Religious respect.
+- Premium service.
+- Easy communication.
+- Reliable travel assistance.
+
+Avoid a cheap-looking design, excessive text, cluttered sections, unnecessary animations, and unsupported marketing claims.
+
+# 3. COMPLETE WEBSITE COLOUR THEME
+
+Use a consistent **premium black, gold, and white colour scheme** throughout the entire website.
+
+### Colour palette
+
+- Primary background: `#000000`
+- Secondary background: `#0B0B0B`
+- Section background: `#111111`
+- Card background: `#181818`
+- Gold accent: `#D4AF37`
+- Soft gold: `#C5A253`
+- Main text: `#FFFFFF`
+- Secondary text: `#BDBDBD`
+- Borders: `#303030`
+- WhatsApp green: `#25D366`
+
+### Design rules
+
+- Use black backgrounds for the header, hero, main sections, cards, and footer.
+- Use gold for prices, important highlights, section labels, icons, and selected borders.
+- Use white for headings and primary text.
+- Use light grey for secondary information.
+- Use gold-background buttons with black text for primary actions.
+- Use transparent buttons with gold borders for secondary actions.
+- Use green only for WhatsApp actions.
+- Keep shadows, glow effects, and animations subtle.
+- Maintain strong text contrast and accessibility.
+
+Do not use blue or green as the main website background theme.
+
+The entire website, including legal pages, gallery pages, package pages, and mobile navigation, must follow this design system.
+
+Create reusable design tokens and components so that the theme can be changed consistently in the future.
+
+# 4. HEADER AND NAVIGATION
+
+Create a premium responsive navigation bar with:
+
+- Company logo.
+- Imaad International Tours & Travels.
+- Home.
+- Umrah Packages.
+- Makkah Ziyarat.
+- Madinah Ziyarat.
+- Hotels.
+- Gallery.
+- About Us.
+- Contact Us.
+- A prominent WhatsApp enquiry button.
+
+Requirements:
+
+- Sticky navigation on desktop.
+- Clean mobile navigation with a working menu.
+- Smooth navigation to relevant sections.
+- Consistent spacing and typography.
+- Visible focus states for keyboard users.
+- No overlapping buttons or text on mobile.
+
+Use the existing logo if available. If no logo exists, create a simple text-based logo treatment without inventing official certifications or symbols.
+
+# 5. HOMEPAGE — IMAGE-FIRST DESIGN
+
+Build the homepage in the following order.
+
+## Section A: Hero
+
+Use a large, high-quality photograph of the Kaaba and Masjid al-Haram.
+
+The image should dominate the first screen, with a subtle dark overlay to make the text readable.
+
+Headline:
+
+**Your Sacred Journey, Beautifully Planned.**
+
+Supporting text:
+
+Umrah Packages • Comfortable Hotels • Makkah & Madinah Ziyarat
+
+Primary button: **Explore Umrah Packages**
+
+Secondary button: **Enquire on WhatsApp**
+
+Use an elegant black overlay, white typography, and selective gold highlights.
+
+Make the first screen visually impressive without overwhelming the visitor with text.
+
+## Section B: Quick Service Categories
+
+Create image cards for:
+
+1. Umrah Packages.
+2. Makkah Ziyarat.
+3. Madinah Ziyarat.
+4. Hotels & Accommodation.
+5. Flight Reservations.
+6. Travel Assistance.
+
+Each card must have:
+
+- A relevant photograph.
+- A short title.
+- One short supporting line.
+- A clear action button.
+
+Only display services that the business actually offers.
+
+## Section C: Featured Umrah Packages
+
+Show three premium package cards.
+
+### Basic Package
+Draft price: ₹79,000 per person.
+
+### Standard Package
+Draft price: ₹95,000 per person.
+
+### Deluxe Package
+Draft price: ₹1,10,000 per person.
+
+These are draft figures previously discussed and must be verified against the actual business quotation before publication.
+
+Each package card should support:
+
+- Package photograph.
+- Price per person.
+- Departure date.
+- Duration.
+- Hotel names.
+- Room arrangements.
+- Flight information.
+- Food arrangements.
+- Transport.
+- Ziyarat.
+- Inclusions.
+- Exclusions.
+- Booking terms.
+- Enquire Now button.
+
+Do not invent package inclusions, departure dates, flight details, hotel names, or availability.
+
+If information is missing, create editable fields and clearly flag them for the business to complete before publication.
+
+## Section D: Why Choose Us?
+
+Create a minimal icon-based section with short labels.
+
+Possible categories, subject to verification:
+
+- Personal Travel Assistance.
+- Clear Package Information.
+- Hotel & Flight Coordination.
+- Ziyarat Arrangements.
+- Booking Support.
+- Customer Assistance.
+
+Do not publish fake ratings, unverified experience claims, or unsupported promises.
+
+## Section E: Makkah and Madinah Preview
+
+Display a beautiful visual preview of the sacred destinations.
+
+Use a large image grid with a **View All Ziyarat** button.
+
+## Section F: Hotel Preview
+
+Show actual hotel photographs where available.
+
+Include a **Explore Hotels** button.
+
+## Section G: Gallery Preview
+
+Display a selection of attractive destination, accommodation, and travel images.
+
+Include a **View All Photos** button linking to `/gallery`.
+
+## Section H: About the Company
+
+Create a short introduction to Imaad International Tours & Travels.
+
+Use the verified company information and a professional travel-related photograph.
+
+Include a **Contact Us** button.
+
+## Section I: Customer Reviews
+
+Display genuine customer reviews only when supplied or retrieved from an authorized source.
+
+Do not generate fake customer names, ratings, testimonials, or photographs.
+
+If no verified reviews are available, omit the section or show a neutral customer feedback invitation.
+
+## Section J: Contact and Enquiry
+
+Show the business contact information, a simple enquiry form, and a prominent WhatsApp button.
+
+## Section K: Footer
+
+Include service links, contact information, gallery, social links, and all legal policies.
+
+---
+
+# 6. UMRAH PACKAGES PAGE
+
+Create a dedicated `/umrah-packages` page.
+
+Design three premium package cards using the black-and-gold theme.
+
+Each package must have a detailed view with:
+
+- Price per person.
+- Travel dates.
+- Duration.
+- Departure airport.
+- Flight information.
+- Hotel names and photographs.
+- Distance from the Haram, when verified.
+- Room sharing options.
+- Meals, if included.
+- Transport arrangements.
+- Ziyarat itinerary.
+- Visa assistance details, if applicable.
+- Included services.
+- Excluded services.
+- Cancellation conditions.
+- Booking and payment terms.
+
+Use the supplied draft package prices only after confirmation.
+
+Add buttons:
+
+- View Details.
+- Enquire on WhatsApp.
+- Request a Quotation.
+
+The selected package name should be included automatically in the WhatsApp enquiry message.
+
+Make all package data editable through the existing project architecture rather than hardcoding the same information across multiple components.
+
+# 7. MAKKAH ZIYARAT PAGE
+
+Create a dedicated `/makkah-ziyarat` page.
+
+Use a large destination image followed by an elegant image-first gallery.
+
+Include the following places supplied by the business:
+
+1. Ghār-e-Thawr — Cave of Thawr.
+2. Arafat and Masjid an-Nimrah.
+3. Jabal al-Rahmah.
+4. Nahr Zubaydah — verify the exact intended destination and appropriate visitor information.
+5. Muzdalifah and its mosque, with the exact mosque name verified.
+6. Mina.
+7. The location associated with the intended sacrifice of Prophet Ismail (peace be upon him) — verify the site's identification and religious-historical claims before publishing.
+8. Jamarat.
+9. Jabal al-Nour — Mount of Light.
+10. Jannat al-Mu'alla.
+11. Masjid al-Jinn.
+12. Masjid al-Khayf.
+
+For each destination, include:
+
+- Correct photograph.
+- Destination name.
+- One short description.
+- Optional map or location link where verified.
+- Enquire About Ziyarat button.
+
+Use authentic, correctly identified photographs. Do not substitute unrelated mosques, mountains, or caves.
+
+Keep the religious descriptions respectful and avoid presenting disputed historical claims as universally established facts.
+
+Add a WhatsApp button for customers interested in a Makkah Ziyarat arrangement.
+
+# 8. MADINAH ZIYARAT PAGE
+
+Create a dedicated `/madinah-ziyarat` page.
+
+Include visually attractive cards for:
+
+1. Masjid an-Nabawi.
+2. Masjid Quba.
+3. Masjid al-Qiblatayn.
+4. Mount Uhud.
+5. Other verified historical and religious destinations in Madinah.
+
+For each card, provide:
+
+- High-quality image.
+- Correct place name.
+- Brief description.
+- Optional location link.
+- Enquire About Ziyarat button.
+
+Avoid long religious explanations.
+
+Use a consistent gallery layout, with black backgrounds, white text, gold accents, and high-quality photographs.
+
+# 9. UMRAH FROM MASJID AL-JI'RANAH
+
+Create a separate service card or section for:
+
+**Umrah from Masjid al-Ji'ranah**
+
+The business originally referred to this location as Masjid-e-Johrana. Verify the intended mosque spelling and location before publication.
+
+Include:
+
+- A photograph of the correctly identified mosque.
+- A short explanation of the arranged travel service.
+- Transport and timing information only when confirmed.
+- An Enquire on WhatsApp button.
+
+Do not confuse this location with other miqat locations or invent religious guidance.
+
+If religious guidance is included, have it checked by a qualified religious authority.
+
+# 10. HOTEL AND ACCOMMODATION PAGE
+
+Create a dedicated `/hotels` page.
+
+Organize photographs into categories:
+
+- Hotel Exterior.
+- Reception & Lobby.
+- Guest Rooms.
+- Twin, Triple & Quad Rooms.
+- Bathrooms.
+- Dining Facilities.
+- Other Facilities.
+- Surrounding Area.
+- Walking Routes to the Haram.
+
+Use the actual hotel photographs supplied by the business.
+
+For every property, show only verified details:
+
+- Hotel name.
+- Location.
+- Room type.
+- Facilities.
+- Distance from Masjid al-Haram.
+- Distance from Masjid an-Nabawi.
+- Availability.
+- Whether it is included in a particular package.
+
+Do not claim that a hotel is included in a package unless confirmed.
+
+Do not present stock photographs as photographs of the actual contracted hotel.
+
+Where illustrative photographs are used, label them clearly.
+
+# 11. COMPLETE PHOTO GALLERY
+
+Create a dedicated `/gallery` page and a gallery preview on the homepage.
+
+## Gallery categories
+
+Create interactive category filters for:
+
+1. All Photos.
+2. Makkah.
+3. Madinah.
+4. Umrah & Pilgrims.
+5. Makkah Ziyarat.
+6. Madinah Ziyarat.
+7. Hotels & Rooms.
+8. Hotel Facilities.
+9. Flights & Travel.
+10. Group Travel & Experiences.
+
+The selected category must filter the images without reloading the entire page.
+
+## Gallery design
+
+- Large photographs.
+- Responsive image grid.
+- Three or four columns on desktop.
+- Two columns on tablet.
+- One or two columns on mobile, depending on screen size.
+- Consistent image proportions.
+- Minimal captions.
+- Subtle hover animations.
+- Gold borders or accents used sparingly.
+
+## Image lightbox
+
+When a visitor clicks an image, open a large image viewer.
+
+Include:
+
+- Close button.
+- Next and previous buttons.
+- Image caption.
+- Keyboard navigation.
+- Escape-key support.
+- Mobile swipe navigation.
+- Appropriate focus handling.
+
+## Gallery image requirements
+
+Use:
+
+- Actual company photographs.
+- Supplied hotel images.
+- Authentic destination photographs.
+- Properly licensed images where additional photographs are needed.
+
+Do not fabricate past travel experiences, customer photographs, group trips, or company activities.
+
+Use descriptive filenames and meaningful alt text. Optimize images for performance and lazy-load images below the fold.
+
+# 12. CONTACT INFORMATION AND WHATSAPP
+
+Use the following previously supplied business details, and verify them against the existing project before changing anything.
+
+**Business:** Imaad International Tours & Travels
+
+**Website:** https://imaadinternationaltravels.com/
+
+**Email:** imaadinternationaltravels@gmail.com
+
+**Phone:** +91 79891 15941
+
+**Additional phone:** +91 91000 07815
+
+**Office address:** 18-13-8/75/1, Rahmath Nagar, beside Pista House, Bandlaguda, Hyderabad, Telangana 500005.
+
+Preserve any verified existing contact details if the current website has updated information.
+
+## WhatsApp integration
+
+Use the primary WhatsApp number in international format without spaces in the URL.
+
+All enquiry buttons must open WhatsApp with an appropriate prefilled message.
+
+Example:
+
+“Assalamu Alaikum. I would like to know more about Imaad International Tours & Travels. Please share the available Umrah packages, departure dates, hotel details, package inclusions, and final price.”
+
+For package-specific enquiries, dynamically include the selected package name.
+
+For Ziyarat enquiries, include the selected destination or service.
+
+Also implement:
+
+- Click-to-call links.
+- Clickable email addresses.
+- Contact form.
+- Package selection.
+- Preferred travel date.
+- Number of travellers.
+- Optional enquiry message.
+
+Validate the form and show clear success and error messages.
+
+Do not claim that an enquiry has been submitted unless the backend or email service confirms it.
+
+# 13. ABOUT US PAGE
+
+Create a dedicated `/about-us` page.
+
+Include:
+
+- Company introduction.
+- Travel services.
+- Approach to customer assistance.
+- How enquiries and bookings work.
+- Contact information.
+- Actual company photographs, if available.
+
+Use short sections, icons, and visual elements.
+
+Only claim registrations, accreditations, industry memberships, experience, or partnerships that can be verified.
+
+# 14. PRIVACY POLICY
+
+Create `/privacy-policy`.
+
+Include the following sections:
+
+1. Company identity and contact details.
+2. Personal information collected.
+3. Purpose of collecting information.
+4. Enquiries and booking information.
+5. Passport and visa information handling.
+6. Information sharing with airlines, hotels, transport providers, visa service providers, and other necessary partners.
+7. Data retention.
+8. Data security safeguards.
+9. Cookies and analytics actually used.
+10. Marketing communications and opt-out options.
+11. User requests for access, correction, deletion where applicable, and withdrawal of consent.
+12. Children's information.
+13. Third-party services.
+14. Policy changes.
+15. Contact information.
+
+Explain how customer information is used to respond to enquiries, arrange requested travel services, and comply with applicable obligations.
+
+Do not claim that specific security technologies, analytics tools, or payment systems are implemented unless verified.
+
+Do not collect more personal information than necessary.
+
+Do not expose customer passport details or personal information publicly.
+
+Do not preselect optional marketing consent.
+
+Prepare the policy for applicable Indian data protection and privacy requirements, including requirements that apply to the actual processing activities.
+
+# 15. TERMS & CONDITIONS
+
+Create `/terms-and-conditions`.
+
+Include:
+
+1. Acceptance of terms.
+2. Description of services.
+3. Package pricing and quotation validity.
+4. Booking procedures.
+5. Payment requirements.
+6. Travel documents and customer responsibilities.
+7. Visa applications and approval limitations.
+8. Airline schedules and baggage rules.
+9. Hotel reservations and substitutions.
+10. Ziyarat itineraries and local restrictions.
+11. Changes to itineraries.
+12. Cancellations and refunds.
+13. Third-party supplier arrangements.
+14. Customer complaints.
+15. Applicable law and dispute resolution.
+16. Contact information.
+
+Clearly explain that package prices, travel dates, accommodation, and inclusions must be confirmed in the written quotation or booking confirmation.
+
+Do not guarantee visa approval, airline schedules, hotel availability, or access to restricted religious sites.
+
+Do not use terms that attempt to remove mandatory customer rights or legally required responsibilities.
+
+Have the final terms reviewed by a qualified Indian legal professional.
+
+# 16. CANCELLATION & REFUND POLICY
+
+Create `/cancellation-refund-policy`.
+
+Include:
+
+- How customers request cancellation.
+- How customers request booking changes.
+- Whether written requests are required.
+- Cancellation charges.
+- Airline cancellation rules.
+- Hotel cancellation rules.
+- Visa and transport service charges.
+- Refund eligibility.
+- Refund calculation.
+- Expected refund processing time.
+- Supplier-initiated cancellations.
+- Travel disruptions.
+- Duplicate payments.
+- Incorrect charges.
+- Payment disputes.
+- Refund enquiry contact information.
+
+Do not invent fixed cancellation percentages, refund periods, non-refundable deposits, or blanket no-refund rules.
+
+Make these details editable and flag missing business-specific rules for approval before publication.
+
+Explain that applicable supplier charges may affect refunds, subject to the confirmed booking terms and applicable law.
+
+# 17. BOOKING & PAYMENT POLICY
+
+Create `/booking-payment-policy`.
+
+Explain:
+
+- Enquiry and quotation process.
+- Booking confirmation process.
+- Accepted payment methods.
+- Advance payment requirements, if applicable.
+- Payment deadlines.
+- Invoices and receipts.
+- Payment failures.
+- Booking availability.
+- Taxes and additional charges.
+- Currency differences where relevant.
+- Payment verification and fraud prevention.
+- Contact information for payment questions.
+
+Do not invent bank account details, UPI IDs, payment gateways, or payment methods.
+
+Never ask customers to send passwords, card security codes, or other unnecessary sensitive credentials through WhatsApp.
+
+# 18. WEBSITE DISCLAIMER
+
+Create `/disclaimer`.
+
+Explain:
+
+- Illustrative photographs versus actual hotel photographs.
+- Changes in travel schedules.
+- Availability of flights and accommodation.
+- Official visa and entry requirements.
+- Religious-site access and local restrictions.
+- Third-party service conditions.
+- Accuracy of destination information.
+- The date information was last reviewed, where appropriate.
+
+Do not use the disclaimer to avoid obligations that cannot legally be excluded.
+
+# 19. FOOTER AND LEGAL NAVIGATION
+
+Display these links in the footer on every relevant page:
+
+- Home.
+- Umrah Packages.
+- Makkah Ziyarat.
+- Madinah Ziyarat.
+- Hotels.
+- Gallery.
+- About Us.
+- Contact Us.
+- Privacy Policy.
+- Terms & Conditions.
+- Cancellation & Refund Policy.
+- Booking & Payment Policy.
+- Disclaimer.
+
+Use readable typography, sufficient contrast, accessible links, and responsive spacing.
+
+Legal pages must use the same premium black, white, and gold theme.
+
+# 20. SEO AND SEARCH VISIBILITY
+
+Implement technical and on-page SEO for relevant searches, including:
+
+- Umrah packages from Hyderabad.
+- Umrah travel agency in Hyderabad.
+- Umrah packages with hotel accommodation.
+- Makkah Ziyarat packages.
+- Madinah Ziyarat packages.
+- Hotels near Masjid al-Haram.
+- Hotels near Masjid an-Nabawi.
+- Flight and hotel booking assistance from Hyderabad.
+- International holiday packages.
+
+Only target services actually offered by the company.
+
+Implement:
+
+- Unique page titles.
+- Meta descriptions.
+- Canonical URLs.
+- Open Graph metadata.
+- Descriptive image alt text.
+- Semantic headings.
+- XML sitemap.
+- Robots.txt.
+- Appropriate internal links.
+- Breadcrumb navigation where useful.
+- Optimized image filenames.
+- Relevant structured data where justified by accurate information.
+
+Use natural language rather than keyword stuffing.
+
+Do not invent search-volume data, rankings, reviews, or company credentials.
+
+# 21. PERFORMANCE AND ACCESSIBILITY
+
+The website must:
+
+- Work on mobile, tablet, laptop, and desktop.
+- Load quickly on slower mobile connections.
+- Use optimized images and responsive image sizes.
+- Prevent layout shifts during image loading.
+- Lazy-load below-the-fold images.
+- Use accessible form labels.
+- Provide keyboard navigation.
+- Maintain visible focus indicators.
+- Support reduced-motion preferences.
+- Use readable font sizes.
+- Maintain appropriate contrast on black backgrounds.
+- Avoid broken images and dead links.
+
+Test all interactive components and fix console errors.
+
+# 22. SECURITY AND BACKEND
+
+Inspect the existing project before implementing backend changes.
+
+Determine whether the website already uses:
+
+- API routes.
+- Database connections.
+- Email services.
+- Form submission handlers.
+- Payment integrations.
+- Analytics.
+- External booking services.
+
+Reuse working integrations.
+
+If an enquiry backend is missing, recommend and implement a suitable solution compatible with the existing architecture, subject to the required credentials and approval.
+
+Security requirements:
+
+- Keep secrets in environment variables.
+- Validate and sanitize submitted data.
+- Add appropriate server-side validation.
+- Implement reasonable spam protection.
+- Avoid exposing sensitive personal information.
+- Never store payment card information unnecessarily.
+- Add clear success and error handling.
+- Do not fabricate form submissions or booking confirmations.
+
+Do not add payment processing unless the business explicitly supports it and the integration is properly configured.
+
+# 23. TECHNICAL IMPLEMENTATION
+
+Use the existing framework and architecture.
+
+For the previously identified Next.js, React, and TypeScript project:
+
+- Reuse existing components where appropriate.
+- Maintain type safety.
+- Keep package and business information in a maintainable data structure.
+- Use reusable buttons, cards, navigation, gallery, and footer components.
+- Use consistent styling tokens.
+- Maintain existing routing where possible.
+- Add new pages without breaking current URLs.
+- Follow the existing project's dependency and coding conventions.
+
+Avoid unnecessary dependency changes or a full framework migration.
+
+Do not invent a backend or database that has not been configured.
+
+# 24. SAFE DEVELOPMENT AND VERCEL DEPLOYMENT
+
+Follow this exact workflow.
+
+**Phase 1 — Audit**
+
+- Inspect the GitHub repository.
+- Identify the production branch.
+- Review existing source code.
+- Check current package and contact data.
+- Inspect existing backend and integrations.
+- Record the current production configuration.
+
+**Phase 2 — Protect**
+
+- Create a separate working branch or safe backup.
+- Preserve environment variables and domain settings.
+- Do not modify production directly.
+
+**Phase 3 — Build**
+
+- Implement the black-and-gold theme.
+- Improve the homepage.
+- Create the package and Ziyarat pages.
+- Add hotel and photo galleries.
+- Implement contact and WhatsApp flows.
+- Add legal pages.
+- Implement SEO and performance improvements.
+
+**Phase 4 — Test**
+
+- Run the existing build.
+- Fix TypeScript and lint errors.
+- Test desktop and mobile layouts.
+- Test every navigation link.
+- Test all WhatsApp buttons.
+- Test telephone and email links.
+- Test form validation and actual submission.
+- Check all gallery images.
+- Verify legal page navigation.
+- Confirm there are no accidental changes to existing backend functionality.
+
+**Phase 5 — Preview**
+
+Create a Vercel preview deployment.
+
+Review the preview before production.
+
+**Phase 6 — Production**
+
+Only deploy after approval.
+
+Verify that the live domain loads correctly and that all critical features work after deployment.
+
+If any operation fails, explain the issue and provide the next step. Never claim a successful deployment without verification.
+
+# 25. FINAL EXPECTED DELIVERABLES
+
+Deliver the following:
+
+1. Redesigned premium black-and-gold homepage.
+2. Responsive navigation.
+3. Umrah packages page.
+4. Makkah Ziyarat page.
+5. Madinah Ziyarat page.
+6. Umrah from Masjid al-Ji'ranah service section.
+7. Hotels and accommodation page.
+8. Interactive photo gallery.
+9. About Us page.
+10. Contact and enquiry section.
+11. WhatsApp integration.
+12. Privacy Policy.
+13. Terms & Conditions.
+14. Cancellation & Refund Policy.
+15. Booking & Payment Policy.
+16. Disclaimer.
+17. Technical SEO improvements.
+18. Responsive mobile experience.
+19. Verified enquiry functionality.
+20. Vercel preview deployment.
+21. A summary of changed files.
+22. Test results and any outstanding issues.
+
+Provide the actual source code changes in the existing project, not just a design description or screenshot.
+
+# 26. FINAL DESIGN DIRECTION
+
+The completed website must look like a premium international Umrah and travel brand.
+
+Use:
+
+- Pure black backgrounds.
+- Elegant gold highlights.
+- White headings.
+- Large, authentic destination photographs.
+- High-quality hotel photography.
+- Minimal text.
+- Beautiful image galleries.
+- Transparent package pricing.
+- Clear booking information.
+- Prominent WhatsApp enquiries.
+- Professional legal pages.
+- Fast, responsive layouts.
+- A consistent design across every page.
+
+The most important priorities are **trust, authentic photography, clear package details, simple navigation, and easy customer enquiries**.
+
+Start by inspecting the existing repository and current website. Then implement the improvements safely, test them, and provide a preview for approval before changing production.
+
+Do not stop after generating a plan. Complete the implementation that your available repository access and tools support, and clearly report anything that requires additional access, business information, or approval.
